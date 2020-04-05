@@ -59,13 +59,13 @@ namespace XAMLEditor
                 }
             }
 
-            foreach (var tokenError in Errors.Where(x => x.Offset >= lineOffset && x.Offset <= lineOffset + text.Length))
-            {
-                base.ChangeLinePart(
-                    tokenError.Offset,
-                    tokenError.Offset + 1 <= lineOffset + text.Length ? tokenError.Offset + 1 : tokenError.Offset,
-                    element => { element.BackgroundBrush = Brushes.Red; });
-            }
+            //foreach (var tokenError in Errors.Where(x => x.Offset >= lineOffset && x.Offset <= lineOffset + text.Length))
+            //{
+            //    base.ChangeLinePart(
+            //        tokenError.Offset,
+            //        tokenError.Offset + 1 <= lineOffset + text.Length ? tokenError.Offset + 1 : tokenError.Offset,
+            //        element => { element.BackgroundBrush = Brushes.Red; });
+            //}
 
             try
             {
